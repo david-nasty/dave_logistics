@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--        Sterownik używany do połączenia z baza danych-->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!--        Adres do bazy danych-->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/davelogisticsdb?createDatabaseIfNotExist=true</property>
+        <!--        Nazwa użytkownika bazodanowego-->
+        <property name="hibernate.connection.username">root</property>
+        <!--        Hasło-->
+        <property name="hibernate.connection.password">ZAQ1@WSX</property>
+        <!--        Dzięki tej wartości w konsoli będą widoczne zapytania wywoływane przez hibernate-->
+        <property name="hibernate.show_sql">true</property>
+        <!--        Dialekt-->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</property>
+        <!--        Po połączeniu z bazą danych jest ona tworzona na podstawie klas do których odnośniki znajdują się poniżej w znaczniku <mapping>-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="projekt.Entities.Konta"/>
+        <mapping class="projekt.Entities.Oddzialy"/>
+        <mapping class="projekt.Entities.Pracownik"/>
+        <mapping class="projekt.Entities.Stanowiska"/>
+        </session-factory>
+
+</hibernate-configuration>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="270.0" prefWidth="530.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Info">
+   <children>
+      <TextArea editable="false" layoutX="14.0" layoutY="42.0" prefHeight="214.0" prefWidth="160.0" style="-fx-border-color: e84d35; -fx-border-radius: 2;" text="Aby dodać pracownika&#10;korzystamy z przycisku&#10;Dodaj pracownika.&#10;Uzupełniamy wszystkie&#10;pola tekstowe, z menu&#10;wybieramy odpowiednie&#10;stanowisko i oddział.&#10;Operacje należy&#10;zatwierdzić przyciskiem&#10;dodaj.&#10;" />
+      <TextArea editable="false" layoutX="187.0" layoutY="42.0" prefHeight="214.0" prefWidth="160.0" style="-fx-border-color: e84d35; -fx-border-radius: 2;" text="Aby edytować daną &#10;wartość komórki należy&#10;na nią dwukrotnie &#10;kliknąć,zmienić wartość&#10;i zatwierdzić klikając&#10;enter.&#10;Po dokonaniu zmian w&#10;danym wierszu należy&#10;zatwierdzić operację &#10;przyciskiem ostatniej&#10;kolumny.&#10;" />
+      <TextArea editable="false" layoutX="357.0" layoutY="42.0" prefHeight="214.0" prefWidth="160.0" style="-fx-border-color: e84d35; -fx-border-radius: 2;" text="Aby usunąć danego &#10;pracownika należy &#10;zaznaczyć odpowiedni &#10;wiersz, w którym znajduję&#10;się pracownik, a następnie&#10;zatwierdzić &#10;operację przyciskiem&#10;Usuń pracownika." />
+      <Label layoutX="60.0" layoutY="14.0" text="Dodawanie">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="14.0" text="Edycja">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="14.0" text="Usuwanie">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
